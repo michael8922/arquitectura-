@@ -1,0 +1,12 @@
+C:\Users\mizam\Desktop\RepasoColecciones\bin\Debug\RepasoColecciones.exe.config
+C:\Users\mizam\Desktop\RepasoColecciones\bin\Debug\RepasoColecciones.exe
+C:\Users\mizam\Desktop\RepasoColecciones\bin\Debug\RepasoColecciones.pdb
+C:\Users\mizam\Desktop\RepasoColecciones\obj\Debug\RepasoColecciones.csproj.AssemblyReference.cache
+C:\Users\mizam\Desktop\RepasoColecciones\obj\Debug\RepasoColecciones.Properties.Resources.resources
+C:\Users\mizam\Desktop\RepasoColecciones\obj\Debug\RepasoColecciones.csproj.GenerateResource.cache
+C:\Users\mizam\Desktop\RepasoColecciones\obj\Debug\RepasoColecciones.csproj.CoreCompileInputs.cache
+C:\Users\mizam\Desktop\RepasoColecciones\obj\Debug\RepasoColecciones.exe
+C:\Users\mizam\Desktop\RepasoColecciones\obj\Debug\RepasoColecciones.pdb
+C:\Users\mizam\Desktop\RepasoColecciones\obj\Debug\RepasoColecciones.PantallaIngresoCliente.resources
+C:\Users\mizam\Desktop\RepasoColecciones\obj\Debug\RepasoColecciones.PantallaListadoCliente.resources
+C:\Users\mizam\Desktop\RepasoColecciones\obj\Debug\RepasoColecciones.PantallaMenu.resources

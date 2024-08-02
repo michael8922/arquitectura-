@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="insertarMarcaService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="marca" type="tns:Marca" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Marca">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Id_marca" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nombre" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="insertarMarcaServiceResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="retornarMarcaService">
+        <s:complexType />
+      </s:element>
+      <s:element name="retornarMarcaServiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="retornarMarcaServiceResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="retornaPosicionMarcaService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pos" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="retornaPosicionMarcaServiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="retornaPosicionMarcaServiceResult" type="tns:Marca" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="buscarMarcaService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id_marca" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="buscarMarcaServiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="buscarMarcaServiceResult" type="tns:Marca" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="eliminarMarcaService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id_marca" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="eliminarMarcaServiceResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="actualizarMarcaService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="marca" type="tns:Marca" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="actualizarMarcaServiceResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="insertarMarcaServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:insertarMarcaService" />
+  </wsdl:message>
+  <wsdl:message name="insertarMarcaServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:insertarMarcaServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="retornarMarcaServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:retornarMarcaService" />
+  </wsdl:message>
+  <wsdl:message name="retornarMarcaServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:retornarMarcaServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="retornaPosicionMarcaServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:retornaPosicionMarcaService" />
+  </wsdl:message>
+  <wsdl:message name="retornaPosicionMarcaServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:retornaPosicionMarcaServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="buscarMarcaServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:buscarMarcaService" />
+  </wsdl:message>
+  <wsdl:message name="buscarMarcaServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:buscarMarcaServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="eliminarMarcaServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:eliminarMarcaService" />
+  </wsdl:message>
+  <wsdl:message name="eliminarMarcaServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:eliminarMarcaServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="actualizarMarcaServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:actualizarMarcaService" />
+  </wsdl:message>
+  <wsdl:message name="actualizarMarcaServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:actualizarMarcaServiceResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebServiceMantenedorMarcaSoap">
+    <wsdl:operation name="insertarMarcaService">
+      <wsdl:input message="tns:insertarMarcaServiceSoapIn" />
+      <wsdl:output message="tns:insertarMarcaServiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="retornarMarcaService">
+      <wsdl:input message="tns:retornarMarcaServiceSoapIn" />
+      <wsdl:output message="tns:retornarMarcaServiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="retornaPosicionMarcaService">
+      <wsdl:input message="tns:retornaPosicionMarcaServiceSoapIn" />
+      <wsdl:output message="tns:retornaPosicionMarcaServiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="buscarMarcaService">
+      <wsdl:input message="tns:buscarMarcaServiceSoapIn" />
+      <wsdl:output message="tns:buscarMarcaServiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="eliminarMarcaService">
+      <wsdl:input message="tns:eliminarMarcaServiceSoapIn" />
+      <wsdl:output message="tns:eliminarMarcaServiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="actualizarMarcaService">
+      <wsdl:input message="tns:actualizarMarcaServiceSoapIn" />
+      <wsdl:output message="tns:actualizarMarcaServiceSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebServiceMantenedorMarcaSoap" type="tns:WebServiceMantenedorMarcaSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="insertarMarcaService">
+      <soap:operation soapAction="http://tempuri.org/insertarMarcaService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retornarMarcaService">
+      <soap:operation soapAction="http://tempuri.org/retornarMarcaService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retornaPosicionMarcaService">
+      <soap:operation soapAction="http://tempuri.org/retornaPosicionMarcaService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscarMarcaService">
+      <soap:operation soapAction="http://tempuri.org/buscarMarcaService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="eliminarMarcaService">
+      <soap:operation soapAction="http://tempuri.org/eliminarMarcaService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="actualizarMarcaService">
+      <soap:operation soapAction="http://tempuri.org/actualizarMarcaService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebServiceMantenedorMarcaSoap12" type="tns:WebServiceMantenedorMarcaSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="insertarMarcaService">
+      <soap12:operation soapAction="http://tempuri.org/insertarMarcaService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retornarMarcaService">
+      <soap12:operation soapAction="http://tempuri.org/retornarMarcaService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retornaPosicionMarcaService">
+      <soap12:operation soapAction="http://tempuri.org/retornaPosicionMarcaService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscarMarcaService">
+      <soap12:operation soapAction="http://tempuri.org/buscarMarcaService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="eliminarMarcaService">
+      <soap12:operation soapAction="http://tempuri.org/eliminarMarcaService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="actualizarMarcaService">
+      <soap12:operation soapAction="http://tempuri.org/actualizarMarcaService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebServiceMantenedorMarca">
+    <wsdl:port name="WebServiceMantenedorMarcaSoap" binding="tns:WebServiceMantenedorMarcaSoap">
+      <soap:address location="https://localhost:44316/WebServiceMantenedorMarca.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebServiceMantenedorMarcaSoap12" binding="tns:WebServiceMantenedorMarcaSoap12">
+      <soap12:address location="https://localhost:44316/WebServiceMantenedorMarca.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

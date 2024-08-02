@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="insertarDetalleIngresoProductoService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="detalle_ingreso" type="tns:Det_Ingreso" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Det_Ingreso">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Id_detalle_ingreso" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Cantidad" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Valor_total" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Ingreso_p_id_ingreso" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Producto_codigo" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="insertarDetalleIngresoProductoServiceResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="retornarDetalleIngresoProductoService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id_ingreso" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="retornarDetalleIngresoProductoServiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="retornarDetalleIngresoProductoServiceResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="retornaPosicionDetalleIngresoProductoService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pos" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="id_ingreso" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="retornaPosicionDetalleIngresoProductoServiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="retornaPosicionDetalleIngresoProductoServiceResult" type="tns:Det_Ingreso" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="buscarDetalleIngresoProductoService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id_detalle_ingreso" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="buscarDetalleIngresoProductoServiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="buscarDetalleIngresoProductoServiceResult" type="tns:Det_Ingreso" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="buscarDetallePorIdIngresoService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id_ingreso" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="buscarDetallePorIdIngresoServiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="buscarDetallePorIdIngresoServiceResult" type="tns:Det_Ingreso" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="eliminarDetalleIngresoProductoService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id_detalle_ingreso" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="eliminarDetalleIngresoProductoServiceResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="actualizarDetalleIngresoProductoService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="detalle_ingreso" type="tns:Det_Ingreso" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="actualizarDetalleIngresoProductoServiceResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="insertarDetalleIngresoProductoServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:insertarDetalleIngresoProductoService" />
+  </wsdl:message>
+  <wsdl:message name="insertarDetalleIngresoProductoServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:insertarDetalleIngresoProductoServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="retornarDetalleIngresoProductoServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:retornarDetalleIngresoProductoService" />
+  </wsdl:message>
+  <wsdl:message name="retornarDetalleIngresoProductoServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:retornarDetalleIngresoProductoServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="retornaPosicionDetalleIngresoProductoServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:retornaPosicionDetalleIngresoProductoService" />
+  </wsdl:message>
+  <wsdl:message name="retornaPosicionDetalleIngresoProductoServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:retornaPosicionDetalleIngresoProductoServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="buscarDetalleIngresoProductoServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:buscarDetalleIngresoProductoService" />
+  </wsdl:message>
+  <wsdl:message name="buscarDetalleIngresoProductoServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:buscarDetalleIngresoProductoServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="buscarDetallePorIdIngresoServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:buscarDetallePorIdIngresoService" />
+  </wsdl:message>
+  <wsdl:message name="buscarDetallePorIdIngresoServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:buscarDetallePorIdIngresoServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="eliminarDetalleIngresoProductoServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:eliminarDetalleIngresoProductoService" />
+  </wsdl:message>
+  <wsdl:message name="eliminarDetalleIngresoProductoServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:eliminarDetalleIngresoProductoServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="actualizarDetalleIngresoProductoServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:actualizarDetalleIngresoProductoService" />
+  </wsdl:message>
+  <wsdl:message name="actualizarDetalleIngresoProductoServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:actualizarDetalleIngresoProductoServiceResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebServiceMantenedorDetIngresoSoap">
+    <wsdl:operation name="insertarDetalleIngresoProductoService">
+      <wsdl:input message="tns:insertarDetalleIngresoProductoServiceSoapIn" />
+      <wsdl:output message="tns:insertarDetalleIngresoProductoServiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="retornarDetalleIngresoProductoService">
+      <wsdl:input message="tns:retornarDetalleIngresoProductoServiceSoapIn" />
+      <wsdl:output message="tns:retornarDetalleIngresoProductoServiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="retornaPosicionDetalleIngresoProductoService">
+      <wsdl:input message="tns:retornaPosicionDetalleIngresoProductoServiceSoapIn" />
+      <wsdl:output message="tns:retornaPosicionDetalleIngresoProductoServiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="buscarDetalleIngresoProductoService">
+      <wsdl:input message="tns:buscarDetalleIngresoProductoServiceSoapIn" />
+      <wsdl:output message="tns:buscarDetalleIngresoProductoServiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="buscarDetallePorIdIngresoService">
+      <wsdl:input message="tns:buscarDetallePorIdIngresoServiceSoapIn" />
+      <wsdl:output message="tns:buscarDetallePorIdIngresoServiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="eliminarDetalleIngresoProductoService">
+      <wsdl:input message="tns:eliminarDetalleIngresoProductoServiceSoapIn" />
+      <wsdl:output message="tns:eliminarDetalleIngresoProductoServiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="actualizarDetalleIngresoProductoService">
+      <wsdl:input message="tns:actualizarDetalleIngresoProductoServiceSoapIn" />
+      <wsdl:output message="tns:actualizarDetalleIngresoProductoServiceSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebServiceMantenedorDetIngresoSoap" type="tns:WebServiceMantenedorDetIngresoSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="insertarDetalleIngresoProductoService">
+      <soap:operation soapAction="http://tempuri.org/insertarDetalleIngresoProductoService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retornarDetalleIngresoProductoService">
+      <soap:operation soapAction="http://tempuri.org/retornarDetalleIngresoProductoService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retornaPosicionDetalleIngresoProductoService">
+      <soap:operation soapAction="http://tempuri.org/retornaPosicionDetalleIngresoProductoService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscarDetalleIngresoProductoService">
+      <soap:operation soapAction="http://tempuri.org/buscarDetalleIngresoProductoService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscarDetallePorIdIngresoService">
+      <soap:operation soapAction="http://tempuri.org/buscarDetallePorIdIngresoService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="eliminarDetalleIngresoProductoService">
+      <soap:operation soapAction="http://tempuri.org/eliminarDetalleIngresoProductoService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="actualizarDetalleIngresoProductoService">
+      <soap:operation soapAction="http://tempuri.org/actualizarDetalleIngresoProductoService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebServiceMantenedorDetIngresoSoap12" type="tns:WebServiceMantenedorDetIngresoSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="insertarDetalleIngresoProductoService">
+      <soap12:operation soapAction="http://tempuri.org/insertarDetalleIngresoProductoService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retornarDetalleIngresoProductoService">
+      <soap12:operation soapAction="http://tempuri.org/retornarDetalleIngresoProductoService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retornaPosicionDetalleIngresoProductoService">
+      <soap12:operation soapAction="http://tempuri.org/retornaPosicionDetalleIngresoProductoService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscarDetalleIngresoProductoService">
+      <soap12:operation soapAction="http://tempuri.org/buscarDetalleIngresoProductoService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscarDetallePorIdIngresoService">
+      <soap12:operation soapAction="http://tempuri.org/buscarDetallePorIdIngresoService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="eliminarDetalleIngresoProductoService">
+      <soap12:operation soapAction="http://tempuri.org/eliminarDetalleIngresoProductoService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="actualizarDetalleIngresoProductoService">
+      <soap12:operation soapAction="http://tempuri.org/actualizarDetalleIngresoProductoService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebServiceMantenedorDetIngreso">
+    <wsdl:port name="WebServiceMantenedorDetIngresoSoap" binding="tns:WebServiceMantenedorDetIngresoSoap">
+      <soap:address location="https://localhost:44316/WebServiceMantenedorDetIngreso.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebServiceMantenedorDetIngresoSoap12" binding="tns:WebServiceMantenedorDetIngresoSoap12">
+      <soap12:address location="https://localhost:44316/WebServiceMantenedorDetIngreso.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

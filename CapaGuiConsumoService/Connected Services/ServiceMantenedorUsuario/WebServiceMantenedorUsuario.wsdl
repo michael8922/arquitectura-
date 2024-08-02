@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="insertarUsuarioService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="tns:Usuario" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Usuario">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Rut" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nombre" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Clave" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Cargo" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="insertarUsuarioServiceResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="retornarUsuarioService">
+        <s:complexType />
+      </s:element>
+      <s:element name="retornarUsuarioServiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="retornarUsuarioServiceResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="retornaPosicionUsuarioService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pos" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="retornaPosicionUsuarioServiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="retornaPosicionUsuarioServiceResult" type="tns:Usuario" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="buscarUsuarioService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="rut" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="buscarUsuarioServiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="buscarUsuarioServiceResult" type="tns:Usuario" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="eliminarUsuarioService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="rut" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="eliminarUsuarioServiceResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="actualizarUsuarioService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="tns:Usuario" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="actualizarUsuarioServiceResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="buscarRutUsuarioService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="rut" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="buscarRutUsuarioServiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="buscarRutUsuarioServiceResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="insertarUsuarioServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:insertarUsuarioService" />
+  </wsdl:message>
+  <wsdl:message name="insertarUsuarioServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:insertarUsuarioServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="retornarUsuarioServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:retornarUsuarioService" />
+  </wsdl:message>
+  <wsdl:message name="retornarUsuarioServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:retornarUsuarioServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="retornaPosicionUsuarioServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:retornaPosicionUsuarioService" />
+  </wsdl:message>
+  <wsdl:message name="retornaPosicionUsuarioServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:retornaPosicionUsuarioServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="buscarUsuarioServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:buscarUsuarioService" />
+  </wsdl:message>
+  <wsdl:message name="buscarUsuarioServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:buscarUsuarioServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="eliminarUsuarioServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:eliminarUsuarioService" />
+  </wsdl:message>
+  <wsdl:message name="eliminarUsuarioServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:eliminarUsuarioServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="actualizarUsuarioServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:actualizarUsuarioService" />
+  </wsdl:message>
+  <wsdl:message name="actualizarUsuarioServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:actualizarUsuarioServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="buscarRutUsuarioServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:buscarRutUsuarioService" />
+  </wsdl:message>
+  <wsdl:message name="buscarRutUsuarioServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:buscarRutUsuarioServiceResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebServiceMantenedorUsuarioSoap">
+    <wsdl:operation name="insertarUsuarioService">
+      <wsdl:input message="tns:insertarUsuarioServiceSoapIn" />
+      <wsdl:output message="tns:insertarUsuarioServiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="retornarUsuarioService">
+      <wsdl:input message="tns:retornarUsuarioServiceSoapIn" />
+      <wsdl:output message="tns:retornarUsuarioServiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="retornaPosicionUsuarioService">
+      <wsdl:input message="tns:retornaPosicionUsuarioServiceSoapIn" />
+      <wsdl:output message="tns:retornaPosicionUsuarioServiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="buscarUsuarioService">
+      <wsdl:input message="tns:buscarUsuarioServiceSoapIn" />
+      <wsdl:output message="tns:buscarUsuarioServiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="eliminarUsuarioService">
+      <wsdl:input message="tns:eliminarUsuarioServiceSoapIn" />
+      <wsdl:output message="tns:eliminarUsuarioServiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="actualizarUsuarioService">
+      <wsdl:input message="tns:actualizarUsuarioServiceSoapIn" />
+      <wsdl:output message="tns:actualizarUsuarioServiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="buscarRutUsuarioService">
+      <wsdl:input message="tns:buscarRutUsuarioServiceSoapIn" />
+      <wsdl:output message="tns:buscarRutUsuarioServiceSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebServiceMantenedorUsuarioSoap" type="tns:WebServiceMantenedorUsuarioSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="insertarUsuarioService">
+      <soap:operation soapAction="http://tempuri.org/insertarUsuarioService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retornarUsuarioService">
+      <soap:operation soapAction="http://tempuri.org/retornarUsuarioService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retornaPosicionUsuarioService">
+      <soap:operation soapAction="http://tempuri.org/retornaPosicionUsuarioService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscarUsuarioService">
+      <soap:operation soapAction="http://tempuri.org/buscarUsuarioService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="eliminarUsuarioService">
+      <soap:operation soapAction="http://tempuri.org/eliminarUsuarioService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="actualizarUsuarioService">
+      <soap:operation soapAction="http://tempuri.org/actualizarUsuarioService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscarRutUsuarioService">
+      <soap:operation soapAction="http://tempuri.org/buscarRutUsuarioService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebServiceMantenedorUsuarioSoap12" type="tns:WebServiceMantenedorUsuarioSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="insertarUsuarioService">
+      <soap12:operation soapAction="http://tempuri.org/insertarUsuarioService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retornarUsuarioService">
+      <soap12:operation soapAction="http://tempuri.org/retornarUsuarioService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retornaPosicionUsuarioService">
+      <soap12:operation soapAction="http://tempuri.org/retornaPosicionUsuarioService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscarUsuarioService">
+      <soap12:operation soapAction="http://tempuri.org/buscarUsuarioService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="eliminarUsuarioService">
+      <soap12:operation soapAction="http://tempuri.org/eliminarUsuarioService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="actualizarUsuarioService">
+      <soap12:operation soapAction="http://tempuri.org/actualizarUsuarioService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscarRutUsuarioService">
+      <soap12:operation soapAction="http://tempuri.org/buscarRutUsuarioService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebServiceMantenedorUsuario">
+    <wsdl:port name="WebServiceMantenedorUsuarioSoap" binding="tns:WebServiceMantenedorUsuarioSoap">
+      <soap:address location="https://localhost:44316/WebServiceMantenedorUsuario.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebServiceMantenedorUsuarioSoap12" binding="tns:WebServiceMantenedorUsuarioSoap12">
+      <soap12:address location="https://localhost:44316/WebServiceMantenedorUsuario.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

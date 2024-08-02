@@ -1,0 +1,69 @@
+C:\Users\mizam\source\repos\RegistroExistencias\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.csproj.AssemblyReference.cache
+C:\Users\mizam\source\repos\RegistroExistencias\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.Properties.Resources.resources
+C:\Users\mizam\source\repos\RegistroExistencias\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.csproj.GenerateResource.cache
+C:\Users\mizam\source\repos\RegistroExistencias\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.csproj.CoreCompileInputs.cache
+C:\Users\mizam\source\repos\RegistroExistencias\CapaGuiConsumoService\bin\Debug\CapaGuiConsumoService.exe
+C:\Users\mizam\source\repos\RegistroExistencias\CapaGuiConsumoService\bin\Debug\CapaGuiConsumoService.pdb
+C:\Users\mizam\source\repos\RegistroExistencias\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.PantallaMenuService.resources
+C:\Users\mizam\source\repos\RegistroExistencias\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.exe
+C:\Users\mizam\source\repos\RegistroExistencias\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.pdb
+C:\Users\mizam\source\repos\RegistroExistencias\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.PantallaConsultaSaldoService.resources
+C:\Users\mizam\source\repos\RegistroExistencias\CapaGuiConsumoService\bin\Debug\CapaGuiConsumoService.exe.config
+C:\Users\mizam\source\repos\RegistroExistencias\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.PantallaSalidaProductoService.resources
+C:\Users\mizam\source\repos\RegistroExistencias\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.PantallaListadoSalidaProductoService.resources
+C:\Users\mizam\source\repos\RegistroExistencias\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.PantallaMantenedorUsuarioService.resources
+C:\Users\mizam\source\repos\RegistroExistencias\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.PantallaMantenedorProductoService.resources
+C:\Users\mizam\source\repos\RegistroExistencias\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.PantallaListadoProductoService.resources
+C:\Users\mizam\source\repos\RegistroExistencias\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.PantallaMantenedorProveedorService.resources
+C:\Users\mizam\source\repos\RegistroExistencias\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.PantallaIngresoProductoService.resources
+C:\Users\mizam\source\repos\RegistroExistencias\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.PantallaListadoIngresoProductoService.resources
+C:\Users\mizam\source\repos\RegistroExistencias\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.PantallaMantenedorMermaService.resources
+C:\Users\mizam\source\repos\RegistroExistencias\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.PantallaListadoMermaService.resources
+C:\Users\mizam\source\repos\RegistroExistencias\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.PantallaMantenedorUbicacionService.resources
+C:\Users\mizam\source\repos\RegistroExistencias\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.PantallaLoginService.resources
+C:\Users\mizam\Desktop\Trabajo Arquitectura\CapaGuiConsumoService\bin\Debug\CapaGuiConsumoService.exe.config
+C:\Users\mizam\Desktop\Trabajo Arquitectura\CapaGuiConsumoService\bin\Debug\CapaGuiConsumoService.exe
+C:\Users\mizam\Desktop\Trabajo Arquitectura\CapaGuiConsumoService\bin\Debug\CapaGuiConsumoService.pdb
+C:\Users\mizam\Desktop\Trabajo Arquitectura\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.PantallaConsultaSaldoService.resources
+C:\Users\mizam\Desktop\Trabajo Arquitectura\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.PantallaIngresoProductoService.resources
+C:\Users\mizam\Desktop\Trabajo Arquitectura\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.PantallaListadoIngresoProductoService.resources
+C:\Users\mizam\Desktop\Trabajo Arquitectura\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.PantallaListadoMermaService.resources
+C:\Users\mizam\Desktop\Trabajo Arquitectura\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.PantallaListadoProductoService.resources
+C:\Users\mizam\Desktop\Trabajo Arquitectura\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.PantallaListadoSalidaProductoService.resources
+C:\Users\mizam\Desktop\Trabajo Arquitectura\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.PantallaLoginService.resources
+C:\Users\mizam\Desktop\Trabajo Arquitectura\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.PantallaMantenedorMermaService.resources
+C:\Users\mizam\Desktop\Trabajo Arquitectura\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.PantallaMantenedorProductoService.resources
+C:\Users\mizam\Desktop\Trabajo Arquitectura\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.PantallaMantenedorProveedorService.resources
+C:\Users\mizam\Desktop\Trabajo Arquitectura\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.PantallaMantenedorUbicacionService.resources
+C:\Users\mizam\Desktop\Trabajo Arquitectura\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.PantallaMantenedorUsuarioService.resources
+C:\Users\mizam\Desktop\Trabajo Arquitectura\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.PantallaMenuService.resources
+C:\Users\mizam\Desktop\Trabajo Arquitectura\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.PantallaSalidaProductoService.resources
+C:\Users\mizam\Desktop\Trabajo Arquitectura\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.Properties.Resources.resources
+C:\Users\mizam\Desktop\Trabajo Arquitectura\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.csproj.GenerateResource.cache
+C:\Users\mizam\Desktop\Trabajo Arquitectura\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.csproj.CoreCompileInputs.cache
+C:\Users\mizam\Desktop\Trabajo Arquitectura\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.exe
+C:\Users\mizam\Desktop\Trabajo Arquitectura\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.pdb
+C:\Users\mizam\Desktop\Trabajo Arquitectura\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.csproj.AssemblyReference.cache
+C:\Users\mizam\Desktop\Proyecto arquitectura Hugo leudo y Michael Zamorano\CapaGuiConsumoService\bin\Debug\CapaGuiConsumoService.exe.config
+C:\Users\mizam\Desktop\Proyecto arquitectura Hugo leudo y Michael Zamorano\CapaGuiConsumoService\bin\Debug\CapaGuiConsumoService.exe
+C:\Users\mizam\Desktop\Proyecto arquitectura Hugo leudo y Michael Zamorano\CapaGuiConsumoService\bin\Debug\CapaGuiConsumoService.pdb
+C:\Users\mizam\Desktop\Proyecto arquitectura Hugo leudo y Michael Zamorano\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.csproj.AssemblyReference.cache
+C:\Users\mizam\Desktop\Proyecto arquitectura Hugo leudo y Michael Zamorano\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.PantallaConsultaSaldoService.resources
+C:\Users\mizam\Desktop\Proyecto arquitectura Hugo leudo y Michael Zamorano\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.PantallaIngresoProductoService.resources
+C:\Users\mizam\Desktop\Proyecto arquitectura Hugo leudo y Michael Zamorano\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.PantallaListadoIngresoProductoService.resources
+C:\Users\mizam\Desktop\Proyecto arquitectura Hugo leudo y Michael Zamorano\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.PantallaListadoMermaService.resources
+C:\Users\mizam\Desktop\Proyecto arquitectura Hugo leudo y Michael Zamorano\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.PantallaListadoProductoService.resources
+C:\Users\mizam\Desktop\Proyecto arquitectura Hugo leudo y Michael Zamorano\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.PantallaListadoSalidaProductoService.resources
+C:\Users\mizam\Desktop\Proyecto arquitectura Hugo leudo y Michael Zamorano\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.PantallaLoginService.resources
+C:\Users\mizam\Desktop\Proyecto arquitectura Hugo leudo y Michael Zamorano\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.PantallaMantenedorMermaService.resources
+C:\Users\mizam\Desktop\Proyecto arquitectura Hugo leudo y Michael Zamorano\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.PantallaMantenedorProductoService.resources
+C:\Users\mizam\Desktop\Proyecto arquitectura Hugo leudo y Michael Zamorano\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.PantallaMantenedorProveedorService.resources
+C:\Users\mizam\Desktop\Proyecto arquitectura Hugo leudo y Michael Zamorano\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.PantallaMantenedorUbicacionService.resources
+C:\Users\mizam\Desktop\Proyecto arquitectura Hugo leudo y Michael Zamorano\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.PantallaMantenedorUsuarioService.resources
+C:\Users\mizam\Desktop\Proyecto arquitectura Hugo leudo y Michael Zamorano\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.PantallaMenuService.resources
+C:\Users\mizam\Desktop\Proyecto arquitectura Hugo leudo y Michael Zamorano\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.PantallaSalidaProductoService.resources
+C:\Users\mizam\Desktop\Proyecto arquitectura Hugo leudo y Michael Zamorano\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.Properties.Resources.resources
+C:\Users\mizam\Desktop\Proyecto arquitectura Hugo leudo y Michael Zamorano\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.csproj.GenerateResource.cache
+C:\Users\mizam\Desktop\Proyecto arquitectura Hugo leudo y Michael Zamorano\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.csproj.CoreCompileInputs.cache
+C:\Users\mizam\Desktop\Proyecto arquitectura Hugo leudo y Michael Zamorano\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.exe
+C:\Users\mizam\Desktop\Proyecto arquitectura Hugo leudo y Michael Zamorano\CapaGuiConsumoService\obj\Debug\CapaGuiConsumoService.pdb

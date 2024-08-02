@@ -1,0 +1,12 @@
+C:\Users\mizam\source\repos\ConexionRegistroExistencias\bin\Debug\ConexionRegistroExistencias.dll
+C:\Users\mizam\source\repos\ConexionRegistroExistencias\bin\Debug\ConexionRegistroExistencias.pdb
+C:\Users\mizam\source\repos\ConexionRegistroExistencias\obj\Debug\ConexionRegistroExistencias.csproj.CoreCompileInputs.cache
+C:\Users\mizam\source\repos\ConexionRegistroExistencias\obj\Debug\ConexionRegistroExistencias.dll
+C:\Users\mizam\source\repos\ConexionRegistroExistencias\obj\Debug\ConexionRegistroExistencias.pdb
+C:\Users\mizam\source\repos\ConexionRegistroExistencias\obj\Debug\ConexionRegistroExistencias.csproj.AssemblyReference.cache
+C:\Users\mizam\Desktop\Proyecto arquitectura Hugo leudo y Michael Zamorano\ConexionRegistroExistencias\bin\Debug\ConexionRegistroExistencias.dll
+C:\Users\mizam\Desktop\Proyecto arquitectura Hugo leudo y Michael Zamorano\ConexionRegistroExistencias\bin\Debug\ConexionRegistroExistencias.pdb
+C:\Users\mizam\Desktop\Proyecto arquitectura Hugo leudo y Michael Zamorano\ConexionRegistroExistencias\obj\Debug\ConexionRegistroExistencias.csproj.AssemblyReference.cache
+C:\Users\mizam\Desktop\Proyecto arquitectura Hugo leudo y Michael Zamorano\ConexionRegistroExistencias\obj\Debug\ConexionRegistroExistencias.csproj.CoreCompileInputs.cache
+C:\Users\mizam\Desktop\Proyecto arquitectura Hugo leudo y Michael Zamorano\ConexionRegistroExistencias\obj\Debug\ConexionRegistroExistencias.dll
+C:\Users\mizam\Desktop\Proyecto arquitectura Hugo leudo y Michael Zamorano\ConexionRegistroExistencias\obj\Debug\ConexionRegistroExistencias.pdb

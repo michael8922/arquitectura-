@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="insertarDetalleMermaService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="detalle_merma" type="tns:Det_Merma" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Det_Merma">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Id_det_merma" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Cantidad" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Producto_codigo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Valor_total" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Merma_id_merma" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="insertarDetalleMermaServiceResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="retornarDetalleMermaService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id_merma" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="retornarDetalleMermaServiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="retornarDetalleMermaServiceResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="retornaPosicionDetalleMermaService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pos" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="id_merma" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="retornaPosicionDetalleMermaServiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="retornaPosicionDetalleMermaServiceResult" type="tns:Det_Merma" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="buscarDetalleMermaService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id_det_merma" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="buscarDetalleMermaServiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="buscarDetalleMermaServiceResult" type="tns:Det_Merma" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="eliminarDetalleMermaService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id_det_merma" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="eliminarDetalleMermaServiceResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="actualizarDetalleMermaService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="detalle_merma" type="tns:Det_Merma" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="actualizarDetalleMermaServiceResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="buscarDetallePorIdMermaService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id_merma" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="buscarDetallePorIdMermaServiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="buscarDetallePorIdMermaServiceResult" type="tns:Det_Merma" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="insertarDetalleMermaServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:insertarDetalleMermaService" />
+  </wsdl:message>
+  <wsdl:message name="insertarDetalleMermaServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:insertarDetalleMermaServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="retornarDetalleMermaServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:retornarDetalleMermaService" />
+  </wsdl:message>
+  <wsdl:message name="retornarDetalleMermaServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:retornarDetalleMermaServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="retornaPosicionDetalleMermaServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:retornaPosicionDetalleMermaService" />
+  </wsdl:message>
+  <wsdl:message name="retornaPosicionDetalleMermaServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:retornaPosicionDetalleMermaServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="buscarDetalleMermaServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:buscarDetalleMermaService" />
+  </wsdl:message>
+  <wsdl:message name="buscarDetalleMermaServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:buscarDetalleMermaServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="eliminarDetalleMermaServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:eliminarDetalleMermaService" />
+  </wsdl:message>
+  <wsdl:message name="eliminarDetalleMermaServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:eliminarDetalleMermaServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="actualizarDetalleMermaServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:actualizarDetalleMermaService" />
+  </wsdl:message>
+  <wsdl:message name="actualizarDetalleMermaServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:actualizarDetalleMermaServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="buscarDetallePorIdMermaServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:buscarDetallePorIdMermaService" />
+  </wsdl:message>
+  <wsdl:message name="buscarDetallePorIdMermaServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:buscarDetallePorIdMermaServiceResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebServiceMantenedorDetMermaSoap">
+    <wsdl:operation name="insertarDetalleMermaService">
+      <wsdl:input message="tns:insertarDetalleMermaServiceSoapIn" />
+      <wsdl:output message="tns:insertarDetalleMermaServiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="retornarDetalleMermaService">
+      <wsdl:input message="tns:retornarDetalleMermaServiceSoapIn" />
+      <wsdl:output message="tns:retornarDetalleMermaServiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="retornaPosicionDetalleMermaService">
+      <wsdl:input message="tns:retornaPosicionDetalleMermaServiceSoapIn" />
+      <wsdl:output message="tns:retornaPosicionDetalleMermaServiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="buscarDetalleMermaService">
+      <wsdl:input message="tns:buscarDetalleMermaServiceSoapIn" />
+      <wsdl:output message="tns:buscarDetalleMermaServiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="eliminarDetalleMermaService">
+      <wsdl:input message="tns:eliminarDetalleMermaServiceSoapIn" />
+      <wsdl:output message="tns:eliminarDetalleMermaServiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="actualizarDetalleMermaService">
+      <wsdl:input message="tns:actualizarDetalleMermaServiceSoapIn" />
+      <wsdl:output message="tns:actualizarDetalleMermaServiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="buscarDetallePorIdMermaService">
+      <wsdl:input message="tns:buscarDetallePorIdMermaServiceSoapIn" />
+      <wsdl:output message="tns:buscarDetallePorIdMermaServiceSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebServiceMantenedorDetMermaSoap" type="tns:WebServiceMantenedorDetMermaSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="insertarDetalleMermaService">
+      <soap:operation soapAction="http://tempuri.org/insertarDetalleMermaService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retornarDetalleMermaService">
+      <soap:operation soapAction="http://tempuri.org/retornarDetalleMermaService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retornaPosicionDetalleMermaService">
+      <soap:operation soapAction="http://tempuri.org/retornaPosicionDetalleMermaService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscarDetalleMermaService">
+      <soap:operation soapAction="http://tempuri.org/buscarDetalleMermaService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="eliminarDetalleMermaService">
+      <soap:operation soapAction="http://tempuri.org/eliminarDetalleMermaService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="actualizarDetalleMermaService">
+      <soap:operation soapAction="http://tempuri.org/actualizarDetalleMermaService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscarDetallePorIdMermaService">
+      <soap:operation soapAction="http://tempuri.org/buscarDetallePorIdMermaService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebServiceMantenedorDetMermaSoap12" type="tns:WebServiceMantenedorDetMermaSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="insertarDetalleMermaService">
+      <soap12:operation soapAction="http://tempuri.org/insertarDetalleMermaService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retornarDetalleMermaService">
+      <soap12:operation soapAction="http://tempuri.org/retornarDetalleMermaService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retornaPosicionDetalleMermaService">
+      <soap12:operation soapAction="http://tempuri.org/retornaPosicionDetalleMermaService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscarDetalleMermaService">
+      <soap12:operation soapAction="http://tempuri.org/buscarDetalleMermaService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="eliminarDetalleMermaService">
+      <soap12:operation soapAction="http://tempuri.org/eliminarDetalleMermaService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="actualizarDetalleMermaService">
+      <soap12:operation soapAction="http://tempuri.org/actualizarDetalleMermaService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscarDetallePorIdMermaService">
+      <soap12:operation soapAction="http://tempuri.org/buscarDetallePorIdMermaService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebServiceMantenedorDetMerma">
+    <wsdl:port name="WebServiceMantenedorDetMermaSoap" binding="tns:WebServiceMantenedorDetMermaSoap">
+      <soap:address location="https://localhost:44316/WebServiceMantenedorDetMerma.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebServiceMantenedorDetMermaSoap12" binding="tns:WebServiceMantenedorDetMermaSoap12">
+      <soap12:address location="https://localhost:44316/WebServiceMantenedorDetMerma.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

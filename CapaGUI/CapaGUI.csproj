@@ -1,0 +1,587 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B2C481A5-AE57-417C-B4F8-A5353E171646}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CapaGUI</RootNamespace>
+    <AssemblyName>CapaGUI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ControlExistenciasDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ControlExistenciasDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ControlExistenciasDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ControlExistenciasDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ControlExistenciasDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ControlExistenciasDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ControlExistenciasDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ControlExistenciasDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ControlExistenciasDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ControlExistenciasDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ControlExistenciasDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ControlExistenciasDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ControlExistenciasDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ControlExistenciasDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ControlExistenciasDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ControlExistenciasDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ControlExistenciasDataSet16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ControlExistenciasDataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ControlExistenciasDataSet17.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ControlExistenciasDataSet17.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ControlExistenciasDataSet18.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ControlExistenciasDataSet18.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ControlExistenciasDataSet19.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ControlExistenciasDataSet19.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ControlExistenciasDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ControlExistenciasDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ControlExistenciasDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ControlExistenciasDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ControlExistenciasDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ControlExistenciasDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ControlExistenciasDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ControlExistenciasDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ControlExistenciasDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ControlExistenciasDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ControlExistenciasDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ControlExistenciasDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ControlExistenciasDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ControlExistenciasDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ControlExistenciasDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ControlExistenciasDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaConsultaSaldo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaConsultaSaldo.Designer.cs">
+      <DependentUpon>PantallaConsultaSaldo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaIngresoProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaIngresoProducto.Designer.cs">
+      <DependentUpon>PantallaIngresoProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaListadoIngresoProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaListadoIngresoProducto.Designer.cs">
+      <DependentUpon>PantallaListadoIngresoProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaListadoMerma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaListadoMerma.Designer.cs">
+      <DependentUpon>PantallaListadoMerma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaListadoProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaListadoProducto.Designer.cs">
+      <DependentUpon>PantallaListadoProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaListadoSalidaProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaListadoSalidaProducto.Designer.cs">
+      <DependentUpon>PantallaListadoSalidaProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaMantenedorMerma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaMantenedorMerma.Designer.cs">
+      <DependentUpon>PantallaMantenedorMerma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaMantenedorProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaMantenedorProducto.Designer.cs">
+      <DependentUpon>PantallaMantenedorProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaMantenedorProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaMantenedorProveedor.Designer.cs">
+      <DependentUpon>PantallaMantenedorProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaMantenedorUbicacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaMantenedorUbicacion.Designer.cs">
+      <DependentUpon>PantallaMantenedorUbicacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaMantenedorUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaMantenedorUsuario.Designer.cs">
+      <DependentUpon>PantallaMantenedorUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaMenu.Designer.cs">
+      <DependentUpon>PantallaMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaSalidaProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaSalidaProducto.Designer.cs">
+      <DependentUpon>PantallaSalidaProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaConsultaSaldo.resx">
+      <DependentUpon>PantallaConsultaSaldo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaIngresoProducto.resx">
+      <DependentUpon>PantallaIngresoProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaListadoIngresoProducto.resx">
+      <DependentUpon>PantallaListadoIngresoProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaListadoMerma.resx">
+      <DependentUpon>PantallaListadoMerma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaListadoProducto.resx">
+      <DependentUpon>PantallaListadoProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaListadoSalidaProducto.resx">
+      <DependentUpon>PantallaListadoSalidaProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaMantenedorMerma.resx">
+      <DependentUpon>PantallaMantenedorMerma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaMantenedorProducto.resx">
+      <DependentUpon>PantallaMantenedorProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaMantenedorProveedor.resx">
+      <DependentUpon>PantallaMantenedorProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaMantenedorUbicacion.resx">
+      <DependentUpon>PantallaMantenedorUbicacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaMantenedorUsuario.resx">
+      <DependentUpon>PantallaMantenedorUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaMenu.resx">
+      <DependentUpon>PantallaMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaSalidaProducto.resx">
+      <DependentUpon>PantallaSalidaProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="ControlExistenciasDataSet.xsc">
+      <DependentUpon>ControlExistenciasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ControlExistenciasDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ControlExistenciasDataSet.xss">
+      <DependentUpon>ControlExistenciasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet1.xsc">
+      <DependentUpon>ControlExistenciasDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ControlExistenciasDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ControlExistenciasDataSet1.xss">
+      <DependentUpon>ControlExistenciasDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet10.xsc">
+      <DependentUpon>ControlExistenciasDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ControlExistenciasDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ControlExistenciasDataSet10.xss">
+      <DependentUpon>ControlExistenciasDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet11.xsc">
+      <DependentUpon>ControlExistenciasDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ControlExistenciasDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ControlExistenciasDataSet11.xss">
+      <DependentUpon>ControlExistenciasDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet12.xsc">
+      <DependentUpon>ControlExistenciasDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ControlExistenciasDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ControlExistenciasDataSet12.xss">
+      <DependentUpon>ControlExistenciasDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet13.xsc">
+      <DependentUpon>ControlExistenciasDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ControlExistenciasDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ControlExistenciasDataSet13.xss">
+      <DependentUpon>ControlExistenciasDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet14.xsc">
+      <DependentUpon>ControlExistenciasDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ControlExistenciasDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ControlExistenciasDataSet14.xss">
+      <DependentUpon>ControlExistenciasDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet15.xsc">
+      <DependentUpon>ControlExistenciasDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ControlExistenciasDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ControlExistenciasDataSet15.xss">
+      <DependentUpon>ControlExistenciasDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet16.xsc">
+      <DependentUpon>ControlExistenciasDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet16.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ControlExistenciasDataSet16.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ControlExistenciasDataSet16.xss">
+      <DependentUpon>ControlExistenciasDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet17.xsc">
+      <DependentUpon>ControlExistenciasDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet17.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ControlExistenciasDataSet17.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ControlExistenciasDataSet17.xss">
+      <DependentUpon>ControlExistenciasDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet18.xsc">
+      <DependentUpon>ControlExistenciasDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet18.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ControlExistenciasDataSet18.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ControlExistenciasDataSet18.xss">
+      <DependentUpon>ControlExistenciasDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet19.xsc">
+      <DependentUpon>ControlExistenciasDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet19.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ControlExistenciasDataSet19.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ControlExistenciasDataSet19.xss">
+      <DependentUpon>ControlExistenciasDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet2.xsc">
+      <DependentUpon>ControlExistenciasDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ControlExistenciasDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ControlExistenciasDataSet2.xss">
+      <DependentUpon>ControlExistenciasDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet3.xsc">
+      <DependentUpon>ControlExistenciasDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ControlExistenciasDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ControlExistenciasDataSet3.xss">
+      <DependentUpon>ControlExistenciasDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet4.xsc">
+      <DependentUpon>ControlExistenciasDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ControlExistenciasDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ControlExistenciasDataSet4.xss">
+      <DependentUpon>ControlExistenciasDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet5.xsc">
+      <DependentUpon>ControlExistenciasDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ControlExistenciasDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ControlExistenciasDataSet5.xss">
+      <DependentUpon>ControlExistenciasDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet6.xsc">
+      <DependentUpon>ControlExistenciasDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ControlExistenciasDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ControlExistenciasDataSet6.xss">
+      <DependentUpon>ControlExistenciasDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet7.xsc">
+      <DependentUpon>ControlExistenciasDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ControlExistenciasDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ControlExistenciasDataSet7.xss">
+      <DependentUpon>ControlExistenciasDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet8.xsc">
+      <DependentUpon>ControlExistenciasDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ControlExistenciasDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ControlExistenciasDataSet8.xss">
+      <DependentUpon>ControlExistenciasDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet9.xsc">
+      <DependentUpon>ControlExistenciasDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ControlExistenciasDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ControlExistenciasDataSet9.xss">
+      <DependentUpon>ControlExistenciasDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaDTO\CapaDTO.csproj">
+      <Project>{633b4c56-f90d-45f4-81a5-2c749ce12f4f}</Project>
+      <Name>CapaDTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaNegocio\CapaNegocio.csproj">
+      <Project>{3727396d-c4d0-4532-9e19-83ab4e97d240}</Project>
+      <Name>CapaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ConexionRegistroExistencias\ConexionRegistroExistencias.csproj">
+      <Project>{77f917eb-9f78-4bf3-b888-1e57f6b35af7}</Project>
+      <Name>ConexionRegistroExistencias</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download-PhotoRoom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modificar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nuevo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\confirmar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

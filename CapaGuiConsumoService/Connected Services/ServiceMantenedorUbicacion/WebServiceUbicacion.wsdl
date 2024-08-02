@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="insertarUbicacionService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ubicacion" type="tns:Ubicacion" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Ubicacion">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Id_ubicacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nombre_ubicacion" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Fecha_ingreso_ubicacion" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Producto_codigo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Cantidad" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="insertarUbicacionServiceResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="retornarUbicacionService">
+        <s:complexType />
+      </s:element>
+      <s:element name="retornarUbicacionServiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="retornarUbicacionServiceResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="retornaPosicionUbicacionService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pos" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="retornaPosicionUbicacionServiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="retornaPosicionUbicacionServiceResult" type="tns:Ubicacion" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="buscarUbicacionService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id_ubicacion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="buscarUbicacionServiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="buscarUbicacionServiceResult" type="tns:Ubicacion" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="eliminarUbicacionService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id_ubicacion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="eliminarUbicacionServiceResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="actualizarUbicacionService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ubicacion" type="tns:Ubicacion" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="actualizarUbicacionServiceResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="buscarUbicacionCodigoProductoService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="codigo_producto" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="buscarUbicacionCodigoProductoServiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="buscarUbicacionCodigoProductoServiceResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="insertarUbicacionServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:insertarUbicacionService" />
+  </wsdl:message>
+  <wsdl:message name="insertarUbicacionServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:insertarUbicacionServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="retornarUbicacionServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:retornarUbicacionService" />
+  </wsdl:message>
+  <wsdl:message name="retornarUbicacionServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:retornarUbicacionServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="retornaPosicionUbicacionServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:retornaPosicionUbicacionService" />
+  </wsdl:message>
+  <wsdl:message name="retornaPosicionUbicacionServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:retornaPosicionUbicacionServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="buscarUbicacionServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:buscarUbicacionService" />
+  </wsdl:message>
+  <wsdl:message name="buscarUbicacionServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:buscarUbicacionServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="eliminarUbicacionServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:eliminarUbicacionService" />
+  </wsdl:message>
+  <wsdl:message name="eliminarUbicacionServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:eliminarUbicacionServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="actualizarUbicacionServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:actualizarUbicacionService" />
+  </wsdl:message>
+  <wsdl:message name="actualizarUbicacionServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:actualizarUbicacionServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="buscarUbicacionCodigoProductoServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:buscarUbicacionCodigoProductoService" />
+  </wsdl:message>
+  <wsdl:message name="buscarUbicacionCodigoProductoServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:buscarUbicacionCodigoProductoServiceResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebServiceUbicacionSoap">
+    <wsdl:operation name="insertarUbicacionService">
+      <wsdl:input message="tns:insertarUbicacionServiceSoapIn" />
+      <wsdl:output message="tns:insertarUbicacionServiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="retornarUbicacionService">
+      <wsdl:input message="tns:retornarUbicacionServiceSoapIn" />
+      <wsdl:output message="tns:retornarUbicacionServiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="retornaPosicionUbicacionService">
+      <wsdl:input message="tns:retornaPosicionUbicacionServiceSoapIn" />
+      <wsdl:output message="tns:retornaPosicionUbicacionServiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="buscarUbicacionService">
+      <wsdl:input message="tns:buscarUbicacionServiceSoapIn" />
+      <wsdl:output message="tns:buscarUbicacionServiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="eliminarUbicacionService">
+      <wsdl:input message="tns:eliminarUbicacionServiceSoapIn" />
+      <wsdl:output message="tns:eliminarUbicacionServiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="actualizarUbicacionService">
+      <wsdl:input message="tns:actualizarUbicacionServiceSoapIn" />
+      <wsdl:output message="tns:actualizarUbicacionServiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="buscarUbicacionCodigoProductoService">
+      <wsdl:input message="tns:buscarUbicacionCodigoProductoServiceSoapIn" />
+      <wsdl:output message="tns:buscarUbicacionCodigoProductoServiceSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebServiceUbicacionSoap" type="tns:WebServiceUbicacionSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="insertarUbicacionService">
+      <soap:operation soapAction="http://tempuri.org/insertarUbicacionService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retornarUbicacionService">
+      <soap:operation soapAction="http://tempuri.org/retornarUbicacionService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retornaPosicionUbicacionService">
+      <soap:operation soapAction="http://tempuri.org/retornaPosicionUbicacionService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscarUbicacionService">
+      <soap:operation soapAction="http://tempuri.org/buscarUbicacionService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="eliminarUbicacionService">
+      <soap:operation soapAction="http://tempuri.org/eliminarUbicacionService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="actualizarUbicacionService">
+      <soap:operation soapAction="http://tempuri.org/actualizarUbicacionService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscarUbicacionCodigoProductoService">
+      <soap:operation soapAction="http://tempuri.org/buscarUbicacionCodigoProductoService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebServiceUbicacionSoap12" type="tns:WebServiceUbicacionSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="insertarUbicacionService">
+      <soap12:operation soapAction="http://tempuri.org/insertarUbicacionService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retornarUbicacionService">
+      <soap12:operation soapAction="http://tempuri.org/retornarUbicacionService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retornaPosicionUbicacionService">
+      <soap12:operation soapAction="http://tempuri.org/retornaPosicionUbicacionService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscarUbicacionService">
+      <soap12:operation soapAction="http://tempuri.org/buscarUbicacionService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="eliminarUbicacionService">
+      <soap12:operation soapAction="http://tempuri.org/eliminarUbicacionService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="actualizarUbicacionService">
+      <soap12:operation soapAction="http://tempuri.org/actualizarUbicacionService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscarUbicacionCodigoProductoService">
+      <soap12:operation soapAction="http://tempuri.org/buscarUbicacionCodigoProductoService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebServiceUbicacion">
+    <wsdl:port name="WebServiceUbicacionSoap" binding="tns:WebServiceUbicacionSoap">
+      <soap:address location="https://localhost:44316/WebServiceUbicacion.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebServiceUbicacionSoap12" binding="tns:WebServiceUbicacionSoap12">
+      <soap12:address location="https://localhost:44316/WebServiceUbicacion.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

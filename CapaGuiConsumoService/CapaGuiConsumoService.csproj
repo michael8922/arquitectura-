@@ -1,0 +1,648 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{180ADBA0-EFEA-476A-AD70-ECE5AFB6A401}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CapaGuiConsumoService</RootNamespace>
+    <AssemblyName>CapaGuiConsumoService</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Connected Services\ServiceMantenedorCliente\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ServiceMantenedorDetalleIngreso\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ServiceMantenedorDetalleMerma\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ServiceMantenedorDetalleSalida\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ServiceMantenedorIngresoProducto\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ServiceMantenedorMarca\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ServiceMantenedorMerma\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ServiceMantenedorProducto\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ServiceMantenedorProveedor\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ServiceMantenedorSalidaProducto\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ServiceMantenedorUbicacion\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ServiceMantenedorUsuario\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="ControlExistenciasDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ControlExistenciasDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ControlExistenciasDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ControlExistenciasDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ControlExistenciasDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ControlExistenciasDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ControlExistenciasDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ControlExistenciasDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ControlExistenciasDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ControlExistenciasDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ControlExistenciasDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ControlExistenciasDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ControlExistenciasDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ControlExistenciasDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ControlExistenciasDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ControlExistenciasDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ControlExistenciasDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ControlExistenciasDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaConsultaSaldoService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaConsultaSaldoService.Designer.cs">
+      <DependentUpon>PantallaConsultaSaldoService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaIngresoProductoService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaIngresoProductoService.Designer.cs">
+      <DependentUpon>PantallaIngresoProductoService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaListadoIngresoProductoService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaListadoIngresoProductoService.Designer.cs">
+      <DependentUpon>PantallaListadoIngresoProductoService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaListadoMermaService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaListadoMermaService.Designer.cs">
+      <DependentUpon>PantallaListadoMermaService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaListadoProductoService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaListadoProductoService.Designer.cs">
+      <DependentUpon>PantallaListadoProductoService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaListadoSalidaProductoService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaListadoSalidaProductoService.Designer.cs">
+      <DependentUpon>PantallaListadoSalidaProductoService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaLoginService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaLoginService.Designer.cs">
+      <DependentUpon>PantallaLoginService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaMantenedorMermaService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaMantenedorMermaService.Designer.cs">
+      <DependentUpon>PantallaMantenedorMermaService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaMantenedorProductoService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaMantenedorProductoService.Designer.cs">
+      <DependentUpon>PantallaMantenedorProductoService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaMantenedorProveedorService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaMantenedorProveedorService.Designer.cs">
+      <DependentUpon>PantallaMantenedorProveedorService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaMantenedorUbicacionService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaMantenedorUbicacionService.Designer.cs">
+      <DependentUpon>PantallaMantenedorUbicacionService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaMantenedorUsuarioService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaMantenedorUsuarioService.Designer.cs">
+      <DependentUpon>PantallaMantenedorUsuarioService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaMenuService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaMenuService.Designer.cs">
+      <DependentUpon>PantallaMenuService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PantallaSalidaProductoService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PantallaSalidaProductoService.Designer.cs">
+      <DependentUpon>PantallaSalidaProductoService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="PantallaConsultaSaldoService.resx">
+      <DependentUpon>PantallaConsultaSaldoService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaIngresoProductoService.resx">
+      <DependentUpon>PantallaIngresoProductoService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaListadoIngresoProductoService.resx">
+      <DependentUpon>PantallaListadoIngresoProductoService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaListadoMermaService.resx">
+      <DependentUpon>PantallaListadoMermaService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaListadoProductoService.resx">
+      <DependentUpon>PantallaListadoProductoService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaListadoSalidaProductoService.resx">
+      <DependentUpon>PantallaListadoSalidaProductoService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaLoginService.resx">
+      <DependentUpon>PantallaLoginService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaMantenedorMermaService.resx">
+      <DependentUpon>PantallaMantenedorMermaService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaMantenedorProductoService.resx">
+      <DependentUpon>PantallaMantenedorProductoService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaMantenedorProveedorService.resx">
+      <DependentUpon>PantallaMantenedorProveedorService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaMantenedorUbicacionService.resx">
+      <DependentUpon>PantallaMantenedorUbicacionService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaMantenedorUsuarioService.resx">
+      <DependentUpon>PantallaMantenedorUsuarioService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaMenuService.resx">
+      <DependentUpon>PantallaMenuService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PantallaSalidaProductoService.resx">
+      <DependentUpon>PantallaSalidaProductoService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Connected Services\ServiceMantenedorCliente\CapaGuiConsumoService.ServiceMantenedorCliente.Cliente.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceMantenedorCliente\WebServiceMantenedorCliente.wsdl" />
+    <None Include="Connected Services\ServiceMantenedorDetalleIngreso\CapaGuiConsumoService.ServiceMantenedorDetalleIngreso.Det_Ingreso.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceMantenedorDetalleIngreso\WebServiceMantenedorDetIngreso.wsdl" />
+    <None Include="Connected Services\ServiceMantenedorDetalleMerma\CapaGuiConsumoService.ServiceMantenedorDetalleMerma.Det_Merma.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceMantenedorDetalleMerma\WebServiceMantenedorDetMerma.wsdl" />
+    <None Include="Connected Services\ServiceMantenedorDetalleSalida\CapaGuiConsumoService.ServiceMantenedorDetalleSalida.Det_Salida.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceMantenedorDetalleSalida\WebServiceMantenedorDetSalida.wsdl" />
+    <None Include="Connected Services\ServiceMantenedorIngresoProducto\CapaGuiConsumoService.ServiceMantenedorIngresoProducto.Ingreso_P.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceMantenedorIngresoProducto\WebServiceMantenedorIngresoProducto.wsdl" />
+    <None Include="Connected Services\ServiceMantenedorMarca\CapaGuiConsumoService.ServiceMantenedorMarca.Marca.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceMantenedorMarca\WebServiceMantenedorMarca.wsdl" />
+    <None Include="Connected Services\ServiceMantenedorMerma\CapaGuiConsumoService.ServiceMantenedorMerma.Merma.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceMantenedorMerma\WebServiceMantenedorMerma.wsdl" />
+    <None Include="Connected Services\ServiceMantenedorProducto\CapaGuiConsumoService.ServiceMantenedorProducto.Producto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceMantenedorProducto\WebServiceMantenedorProducto.wsdl" />
+    <None Include="Connected Services\ServiceMantenedorProveedor\CapaGuiConsumoService.ServiceMantenedorProveedor.Proveedor.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceMantenedorProveedor\WebServiceMantenedorProveedor.wsdl" />
+    <None Include="Connected Services\ServiceMantenedorSalidaProducto\CapaGuiConsumoService.ServiceMantenedorSalidaProducto.Salida_P.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceMantenedorSalidaProducto\WebServiceMantenedorSalidaProducto.wsdl" />
+    <None Include="Connected Services\ServiceMantenedorUbicacion\CapaGuiConsumoService.ServiceMantenedorUbicacion.Ubicacion.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceMantenedorUbicacion\WebServiceUbicacion.wsdl" />
+    <None Include="Connected Services\ServiceMantenedorUsuario\CapaGuiConsumoService.ServiceMantenedorUsuario.Usuario.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceMantenedorUsuario\WebServiceMantenedorUsuario.wsdl" />
+    <None Include="ControlExistenciasDataSet.xsc">
+      <DependentUpon>ControlExistenciasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ControlExistenciasDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ControlExistenciasDataSet.xss">
+      <DependentUpon>ControlExistenciasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet1.xsc">
+      <DependentUpon>ControlExistenciasDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ControlExistenciasDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ControlExistenciasDataSet1.xss">
+      <DependentUpon>ControlExistenciasDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet2.xsc">
+      <DependentUpon>ControlExistenciasDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ControlExistenciasDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ControlExistenciasDataSet2.xss">
+      <DependentUpon>ControlExistenciasDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet3.xsc">
+      <DependentUpon>ControlExistenciasDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ControlExistenciasDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ControlExistenciasDataSet3.xss">
+      <DependentUpon>ControlExistenciasDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet4.xsc">
+      <DependentUpon>ControlExistenciasDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ControlExistenciasDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ControlExistenciasDataSet4.xss">
+      <DependentUpon>ControlExistenciasDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet5.xsc">
+      <DependentUpon>ControlExistenciasDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ControlExistenciasDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ControlExistenciasDataSet5.xss">
+      <DependentUpon>ControlExistenciasDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet6.xsc">
+      <DependentUpon>ControlExistenciasDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ControlExistenciasDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ControlExistenciasDataSet6.xss">
+      <DependentUpon>ControlExistenciasDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet7.xsc">
+      <DependentUpon>ControlExistenciasDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ControlExistenciasDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ControlExistenciasDataSet7.xss">
+      <DependentUpon>ControlExistenciasDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet8.xsc">
+      <DependentUpon>ControlExistenciasDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="ControlExistenciasDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ControlExistenciasDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ControlExistenciasDataSet8.xss">
+      <DependentUpon>ControlExistenciasDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\ServiceMantenedorCliente\" />
+    <WCFMetadataStorage Include="Connected Services\ServiceMantenedorDetalleIngreso\" />
+    <WCFMetadataStorage Include="Connected Services\ServiceMantenedorDetalleMerma\" />
+    <WCFMetadataStorage Include="Connected Services\ServiceMantenedorDetalleSalida\" />
+    <WCFMetadataStorage Include="Connected Services\ServiceMantenedorIngresoProducto\" />
+    <WCFMetadataStorage Include="Connected Services\ServiceMantenedorMarca\" />
+    <WCFMetadataStorage Include="Connected Services\ServiceMantenedorMerma\" />
+    <WCFMetadataStorage Include="Connected Services\ServiceMantenedorProducto\" />
+    <WCFMetadataStorage Include="Connected Services\ServiceMantenedorProveedor\" />
+    <WCFMetadataStorage Include="Connected Services\ServiceMantenedorSalidaProducto\" />
+    <WCFMetadataStorage Include="Connected Services\ServiceMantenedorUbicacion\" />
+    <WCFMetadataStorage Include="Connected Services\ServiceMantenedorUsuario\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceMantenedorSalidaProducto\WebServiceMantenedorSalidaProducto.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceMantenedorSalidaProducto\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceMantenedorSalidaProducto\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceMantenedorSalidaProducto\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceMantenedorDetalleSalida\WebServiceMantenedorDetSalida.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceMantenedorDetalleSalida\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceMantenedorDetalleSalida\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceMantenedorDetalleSalida\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceMantenedorProducto\WebServiceMantenedorProducto.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceMantenedorProducto\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceMantenedorProducto\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceMantenedorProducto\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceMantenedorUsuario\WebServiceMantenedorUsuario.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceMantenedorUsuario\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceMantenedorUsuario\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceMantenedorUsuario\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceMantenedorMerma\WebServiceMantenedorMerma.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceMantenedorMerma\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceMantenedorMerma\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceMantenedorMerma\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceMantenedorMarca\WebServiceMantenedorMarca.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceMantenedorMarca\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceMantenedorMarca\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceMantenedorMarca\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceMantenedorProveedor\WebServiceMantenedorProveedor.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceMantenedorProveedor\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceMantenedorProveedor\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceMantenedorProveedor\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceMantenedorIngresoProducto\WebServiceMantenedorIngresoProducto.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceMantenedorIngresoProducto\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceMantenedorIngresoProducto\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceMantenedorIngresoProducto\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceMantenedorDetalleIngreso\WebServiceMantenedorDetIngreso.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceMantenedorDetalleIngreso\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceMantenedorDetalleIngreso\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceMantenedorDetalleIngreso\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceMantenedorDetalleMerma\WebServiceMantenedorDetMerma.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceMantenedorDetalleMerma\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceMantenedorDetalleMerma\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceMantenedorDetalleMerma\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceMantenedorUbicacion\WebServiceUbicacion.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceMantenedorUbicacion\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceMantenedorUbicacion\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceMantenedorUbicacion\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceMantenedorCliente\WebServiceMantenedorCliente.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceMantenedorCliente\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceMantenedorCliente\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceMantenedorCliente\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
